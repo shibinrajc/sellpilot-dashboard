@@ -1,0 +1,47 @@
+.orders {
+  margin-top: 30px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.orders h2 {
+  margin-bottom: 10px;
+}
+
+.orders table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orders th,
+.orders td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.orders th {
+  color: #666;
+  font-size: 14px;
+}
+.status {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.status.green {
+  color: green;
+}
+
+.status.red {
+  color: red;
+}
+
+.status.blue {
+  color: blue;
+}
+
+.status.orange {
+  color: orange;
+}

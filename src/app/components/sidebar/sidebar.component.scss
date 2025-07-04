@@ -1,0 +1,43 @@
+.sidebar {
+  width: 240px;
+  background: #fff;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #5a33d0;
+  margin-bottom: 20px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 10px 0;
+  color: #333;
+  cursor: pointer;
+}
+
+.menu li.active {
+  background: #e5ddfb;
+  color: #5a33d0;
+  font-weight: bold;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.menu .section-title {
+  font-weight: bold;
+  margin-top: 20px;
+  color: #555;
+}
+
+.menu .logout {
+  color: red;
+  margin-top: 20px;
+}
