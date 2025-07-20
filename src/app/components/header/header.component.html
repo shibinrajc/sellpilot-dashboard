@@ -1,4 +1,26 @@
-<div class="header">
-  <h1><i class="bi bi-bar-chart-fill me-2"></i>Sales Overview</h1>
-  <input type="text" placeholder="Search product" />
+<div class="search-container">
+  <div class="dropdown-wrapper">
+    <!-- Search input -->
+    <mat-form-field appearance="outline" class="search-box" floatLabel="auto">
+      <input
+        matInput
+        placeholder="Search product"
+        (focus)="showDropdown = true"
+        (blur)="hideDropdownWithDelay()"
+        [(ngModel)]="searchText"
+      />
+    </mat-form-field>
+
+    <!-- Dropdown list -->
+    <div
+      class="dropdown-container"
+      *ngIf="showDropdown"
+      cdkDropList
+      (cdkDropListDropped)="drop($event)"
+    >
+      <div class="example-box" *ngFor="let movie of dummyItems" cdkDrag>
+        {{ movie }}
+      </div>
+    </div>
+  </div>
 </div>

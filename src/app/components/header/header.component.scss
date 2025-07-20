@@ -1,11 +1,36 @@
-.header {
+.search-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-end; /* Push to right */
+  padding-right: 1rem; /* Optional spacing from edge */
 }
 
-.header input {
-  padding: 6px 10px;
+.dropdown-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.search-box {
+  width: 250px;
+}
+
+.dropdown-container {
+  position: absolute;
+  margin-top: 4px;
+  background: #fff;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  width: 250px;
+  z-index: 1000;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.example-box {
+  padding: 8px 12px;
+  cursor: move;
+  border-bottom: 1px solid #eee;
+}
+
+.example-box:last-child {
+  border-bottom: none;
 }
