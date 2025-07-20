@@ -3,6 +3,7 @@
   background: #fff;
   padding: 20px;
   border-radius: 10px;
+  border: 1px solid #e0e0e0; /* ✅ Added subtle border */
 }
 
 .orders h2 {
@@ -24,7 +25,9 @@
 .orders th {
   color: #666;
   font-size: 14px;
+  background-color: #fafafa; /* ✅ Optional: makes header more distinct */
 }
+
 .status {
   font-size: 14px;
   margin-top: 5px;

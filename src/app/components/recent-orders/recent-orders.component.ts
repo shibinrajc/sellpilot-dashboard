@@ -1,11 +1,10 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
+import { CdkDrag } from "@angular/cdk/drag-drop";
 
 @Component({
-  selector: 'app-recent-orders',
-  imports: [],
-  templateUrl: './recent-orders.component.html',
-  styleUrl: './recent-orders.component.scss'
+  selector: "app-recent-orders",
+  imports: [CdkDrag],
+  templateUrl: "./recent-orders.component.html",
+  styleUrl: "./recent-orders.component.scss",
 })
-export class RecentOrdersComponent {
-
-}
+export class RecentOrdersComponent {}

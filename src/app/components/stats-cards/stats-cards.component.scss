@@ -21,3 +21,12 @@
   font-size: 24px;
   font-weight: bold;
 }
+.status.green {
+  color: #28a745; /* Bootstrap success green */
+}
+.status.blue {
+  color: #007bff; /* Bootstrap primary blue */
+}
+.status.red {
+  color: #dc3545; /* Bootstrap danger red */
+}
